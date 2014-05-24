@@ -210,6 +210,7 @@ public class Tracker extends Activity implements OnClickListener {
             brainCounter = 0;
             badpubCounter = 0;
             tagCounter = 0;
+            side = 0;
             credits.setText(Integer.toString(corpCredCounter));
             brains.setText(Integer.toString(brainCounter));
             badpubs.setText(Integer.toString(badpubCounter));
@@ -334,10 +335,10 @@ public class Tracker extends Activity implements OnClickListener {
                     credits.setText(Integer.toString(corpCredCounter));
                     View w = this.getWindow().getDecorView();
                     w.setBackground(c);
+                    turnsCounter++;
                 }
                 clickCounter = -1;
                 clickCounter++;
-                turnsCounter++;
                 click1.setVisibility(View.GONE);
                 click2.setVisibility(View.GONE);
                 click3.setVisibility(View.GONE);
