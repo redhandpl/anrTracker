@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.anr.app.Tracker"
+    android:background="@drawable/background">
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/resetButton"
+        android:layout_alignTop="@+id/addButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/credit"
+        android:background="@null"
+        android:layout_alignTop="@+id/addButton"
+        android:layout_toRightOf="@+id/subtractButton" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
+        android:id="@+id/myCredits"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_marginRight="29dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:background="@null"
+        android:layout_toRightOf="@+id/myCredits"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/aonecredit" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtractButton"
+        android:background="@null"
+        android:src="@drawable/sonecredit" />
+
+</RelativeLayout>

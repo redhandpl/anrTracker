@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">A:NR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="credits">5</string>
+    <string name="brain">0</string>
+    <string name="badpub">0</string>
+    <string name="tag">0</string>
+    <string name="turns">0</string>
+    <string name="oppcreds">5</string>
+    <string name="addone">+1</string>
+    <string name="subtractone">-1</string>
+    <string name="oppadd">+</string>
+    <string name="oppsub">-</string>
+    <string name="reset">New game</string>
+
+</resources>
