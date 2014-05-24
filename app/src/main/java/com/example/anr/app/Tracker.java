@@ -1,23 +1,16 @@
 package com.example.anr.app;
 
 import android.app.Activity;
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.graphics.Color;
 import android.widget.ImageButton;
-
-import org.w3c.dom.Text;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class Tracker extends Activity implements OnClickListener {
@@ -41,10 +34,7 @@ public class Tracker extends Activity implements OnClickListener {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
     Button addCred;
@@ -131,32 +121,18 @@ public class Tracker extends Activity implements OnClickListener {
         subTags.setOnClickListener(this);
         click.setOnClickListener(this);
 
-        click1.setVisibility(1);
-        click2.setVisibility(1);
-        click3.setVisibility(1);
-        click4.setVisibility(1);
-
         click1.setVisibility(View.GONE);
         click2.setVisibility(View.GONE);
         click3.setVisibility(View.GONE);
         click4.setVisibility(View.GONE);
 
         end.setOnClickListener(this);
-        end.setVisibility(1);
-        reset.setVisibility(1);
         reset.setVisibility(View.GONE);
-        turns.setVisibility(1);
         turns.setVisibility(View.GONE);
-        turnsP.setVisibility(1);
         turnsP.setVisibility(View.GONE);
-
-        oppCredit.setVisibility(1);
-        oppCredits.setVisibility(1);
 
         oppAddCred = (Button)findViewById(R.id.oppAdd);
         oppSubCred = (Button)findViewById(R.id.oppSub);
-        oppAddCred.setVisibility(1);
-        oppSubCred.setVisibility(1);
         oppAddCred.setOnClickListener(this);
         oppSubCred.setOnClickListener(this);
 
